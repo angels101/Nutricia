@@ -2,7 +2,7 @@
 
 (function() {
 	const url = "http://api.openweathermap.org/data/2.5/weather?q=";
-	const apiKey = "1a69c7a048692ea0d3807ef55206c92a"; 
+	const apiKey = "1a69c7a048692ea0d3807ef55206c92a"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 	const activities = {
 		teamIn: ['basketball','hockey','volleyball'],
 		teamOutWarm: ['softball/baseball','football/soccer','American football','rowing','tennis','volleyball','ultimate frisbee','rugby'],
@@ -15,38 +15,29 @@
 	let category = 'all';
 
 	// get weather data when user clicks Forecast button, then add temp & conditions to view
-//	    $('.forecast-button').click(function(e) {
-		document.querySelector('.forecast-button').addEventListener('click', function(e) {
-
-		})
-	
+	$('.forecast-button').click(function(e) {
 		e.preventDefault();
-//		const location = $('#location').val();
-		const location = document.querySelector('#location').value;
-//		$('#location').val('');
-		document.querySelector('#location').value='';
-/** 
+		const location = $('#location').val();
+		$('#location').val('');
+/*
 		$.get(url + location + '&appid=' + apiKey).done(function(response) {
 			updateUISuccess(response);
 		}).fail(function() {
 			updateUIFailure();
 		});
-		 **/
+*/
 
-		fetch(url + location + '&appid=' + apiKey).then(function(response){
-			return (response.json());
+		fetch(url + location + '&appid=' + apiKey).then(function(response) {
+			return(response.json());
 		}).then(function(response) {
 			updateUISuccess(response);
 		}).catch(function() {
 			updateUIFailure();
 		});
-	}, false);
+	});
 
 	// update list of sports when user selects a different category (solo/team/all)
-//	$('.options div').on('click', updateActivityList);
-	document.querySelectorAll('.options div').forEach(function(el){
-		el.addEventListener('click', updateActivityList, false);
-	})
+	$('.options div').on('click', updateActivityList);
 
 	// handle ajax success
 	function updateUISuccess(response) {
@@ -61,12 +52,10 @@
 			degFInt: Math.floor(degFInt),
 			city: response.name
 		};
-//selecting the Dom element where the react component is rendered
-//		const $into = $('.conditions')[0];
-const into = document.querySelector('.conditions');
 
-//		ReactDOM.render(<Forecast {...state} />, $into);
-		ReactDOM.render(<Forecast {...state} />, into);
+		const $into = $('.conditions')[0];
+
+		ReactDOM.render(<Forecast {...state} />, $into);
 
 		function Forecast(props) {
 			return (
@@ -93,10 +82,7 @@ const into = document.querySelector('.conditions');
 			// if the clicked tab does not have the class 'selected', then location of 'selected' class must be added
 			//   to the clicked element and removed from its siblings
 			category = $(this).attr('id');
-//			$('.options div').removeClass('selected');
-			document.querySelector('.options div').forEach(function(el){
-				el.classList.remove('selected');
-			})
+			$('.options div').removeClass('selected');
 			$(this).addClass('selected');
 		} 
 
@@ -120,12 +106,9 @@ const into = document.querySelector('.conditions');
 			}
 		}
 
-		//const $into = $('.activities')[0];
-		const into = document.querySelector('.activities');
-	
+		const $into = $('.activities')[0];
 
-//		ReactDOM.render(<Activities {...state} />, $into);
-		ReactDOM.render(<Activities {...state} />, into);
+		ReactDOM.render(<Activities {...state} />, $into);
 
 		function Activities(props) {
 			const activitiesList = props.activities.map(function(activity, index) {
