@@ -37,8 +37,14 @@ Using the querrySelectorAll for document method
          e.preventDefault();
          //what should happen
      }, false);
-## Taking out the reactcomponents
-We build up a dom 
+## ScreenShots
+
+<div align="center">
+    <img src="/images/shots/Activities.png" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="/images/shots/ActivitiesForecast.png" width="400px"</img> 
+</div>
 
 
 
