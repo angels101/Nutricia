@@ -12,10 +12,11 @@ We support and encourage active and healthy lifestyles, by offering ethically so
 
             
 # Technologies Used
-HTML
-CSS 
-JAVASCRIPT
-APIs
+1. HTML
+2. CSS 
+3. JAVASCRIPT
+4. APIs
+
             
 ## Behavior Driven Development
 
@@ -37,11 +38,16 @@ Using the querrySelectorAll for document method
          e.preventDefault();
          //what should happen
      }, false);
+     <br>
+# Challenges/Handles
+The API fetch is not running on deployed gh-pages ie git.io. Preview the screen shots below on Activity forecast and the result Activities. 
 ## ScreenShots
 
 <div align="center">
     <img src="/images/shots/Activities.png" width="400px"</img> 
 </div>
+
+  <br>
 <div align="center">
     <img src="/images/shots/ActivityForecast.png" width="400px"</img> 
 </div>
@@ -49,11 +55,11 @@ Using the querrySelectorAll for document method
 
 
 ## Contribution
-Incase of any contibution and feedback, feel free to doso by visiting [Thislink] (https://github.com/angels101/Nutricia).
+Incase of any contibution and feedback, feel free to doso by visiting [Thislink] (https://github.com/angels101/Nutricia) and reachout angelscodex101@gmail.com.
                       </br>
 #### License
   [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-         Copyright © 2021 AngelsCodex.inc
+## Copyright © 2021 AngelsCodex.inc
 
 
