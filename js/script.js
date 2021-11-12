@@ -188,4 +188,4 @@
 //		$(".conditions").text("Weather information unavailable");
 		document.querySelector(".conditions").textContent = "Weather information unavailable";
 	}
-})();
+})(); 
