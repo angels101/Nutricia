@@ -49,7 +49,7 @@ The API fetch is not running on deployed gh-pages ie git.io. Preview the screen 
 
   <br/>
 <div align="center">
-    <img src="/images/shots/ActivityForecast.png" width="400px"</img> 
+    <img src="/images/shots/ActivityForecast.png" width="500px", Height="100px"</img> 
 </div>
 
 <br/>
@@ -60,6 +60,7 @@ Incase of any contibution and feedback, feel free to doso by visiting [Thislink]
 #### License
   [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-## Copyright © 2021 AngelsCodex.inc
+Copyright © 2021 AngelsCodex.inc
+https://agitated-hamilton-881922.netlify.app/
 
 
