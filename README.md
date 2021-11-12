@@ -47,12 +47,12 @@ The API fetch is not running on deployed gh-pages ie git.io. Preview the screen 
     <img src="/images/shots/Activities.png" width="400px"</img> 
 </div>
 
-  <br>
+  <br/>
 <div align="center">
     <img src="/images/shots/ActivityForecast.png" width="400px"</img> 
 </div>
 
-
+<br/>
 
 ## Contribution
 Incase of any contibution and feedback, feel free to doso by visiting [Thislink] (https://github.com/angels101/Nutricia) and reachout angelscodex101@gmail.com.
