@@ -85,6 +85,14 @@
 		let iconImage = document.createElement('img');
 		iconImage.setAttribute('src', state.icon);
 		iconImage.setAttribute('alt', state.condition);
+		conditionsPara.appendChild(iconImage);
+		container.appendChild(cityPara);
+		container.appendChild(conditionsPara);
+		if (document.querySelector('.conditions div')) {
+			into.replaceChild(container, document.querySelector('.conditions div'));
+		} else {
+			into.appendChild(container);
+		}
 
 		updateActivityList();
 	}
@@ -159,9 +167,16 @@
 		let list = document.createElement('ul');
 		state.activities.forEach(function(activity,index) {
 			let listItem = document.createElement('li');
-			listItem.textContent = activity;
 			listItem.setAttribute('key', index);
+			listItem.textContent = activity;
+			list.appendChild(listItem);
 		});
+		activitiesContainer.appendChild(list);
+		if (document.querySelector('.activities div')) {
+			into.replaceChild(activitiesContainer, document.querySelector('.activities div'));
+		} else {
+			into.appendChild(activitiesContainer);
+		}
 
 		$('.results').slideDown(300);
 	}
