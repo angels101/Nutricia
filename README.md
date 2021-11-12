@@ -43,7 +43,7 @@ Using the querrySelectorAll for document method
     <img src="/images/shots/Activities.png" width="400px"</img> 
 </div>
 <div align="center">
-    <img src="/images/shots/ActivitiesForecast.png" width="400px"</img> 
+    <img src="/images/shots/ActivityForecast.png" width="400px"</img> 
 </div>
 
 
