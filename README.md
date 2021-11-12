@@ -5,7 +5,8 @@ We support and encourage active and healthy lifestyles, by offering ethically so
 
 ##  Setup Instructions
 1. clone the repository
-2. create your own weather API from ('http://api.openweathermap.org')
+2. create your own weather API from 
+<a href="http://api.openweathermap.org" target="_blank">Portfolio</a>
 3. Navigate to the script.js and Insert your API key.
 4. run your server to preview the site
 5. Search Any location for weather and sporting activities recommndation 
@@ -55,20 +56,21 @@ The API fetch is not running on deployed gh-pages ie git.io. Preview the screen 
 <br/>
 
 ## Contribution
-Incase of any contibution and feedback, feel free to doso by visiting [Thislink] (https://github.com/angels101/Nutricia) and reachout angelscodex101@gmail.com.
+Incase of any contibution and feedback, feel free to doso by visiting [Thislink] <a href="https://angels101.github.io/Nutricia/" target="_blank">Nutricia</a> and reachout angelscodex101@gmail.com.
 
             
 <br/>
 
 ## portfolio
-https://agitated-hamilton-881922.netlify.app/ 
+ 
+<a href="https://agitated-hamilton-881922.netlify.app/" target="_blank">Portfolio</a>
 
 <br/>
 
 ## License
   [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-# <div align="center"><h2>Copyright © 2021 AngelsCodex.inc</h2></div>
+ <div align="center"><h1>Copyright © 2021 AngelsCodex.inc</h1></div>
 <br/> 
 
 
