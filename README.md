@@ -49,7 +49,7 @@ The API fetch is not running on deployed gh-pages ie git.io. Preview the screen 
 
   <br/>
 <div align="center">
-    <img src="/images/shots/ActivityForecast.png" width="500px", Height="100px"</img> 
+    <img src="/images/shots/ActivityForecast.png" width="400px"</img> 
 </div>
 
 <br/>
