@@ -18,8 +18,10 @@
 //	$('.forecast-button').click(function(e) {
 	document.querySelector('.forecast-button').addEventListener('click', function(e) {
 		e.preventDefault();
-		const location = $('#location').val();
-		$('#location').val('');
+//		const location = $('#location').val();
+		const location = document.querySelector('#location').value;
+//		$('#location').val('');
+		document.querySelector('#location').value = '';
 /*
 		$.get(url + location + '&appid=' + apiKey).done(function(response) {
 			updateUISuccess(response);
@@ -38,11 +40,11 @@
 	}, false);
 
 	// update list of sports when user selects a different category (solo/team/all)
-//	$('.options div').on('click', updateActivityList);
+	//$('.options div').on('click', updateActivityList);
 	document.querySelectorAll('.options div').forEach(function(el) {
 		el.addEventListener('click', updateActivityList, false);
 	});
-	
+
 	// handle ajax success
 	function updateUISuccess(response) {
 		const degC = response.main.temp - 273.15;
@@ -57,9 +59,11 @@
 			city: response.name
 		};
 
-		const $into = $('.conditions')[0];
+//		const $into = $('.conditions')[0];
+		const into = document.querySelector('.conditions');
 
-		ReactDOM.render(<Forecast {...state} />, $into);
+//		ReactDOM.render(<Forecast {...state} />, $into);
+		ReactDOM.render(<Forecast {...state} />, into);
 
 		function Forecast(props) {
 			return (
@@ -86,7 +90,13 @@
 			// if the clicked tab does not have the class 'selected', then location of 'selected' class must be added
 			//   to the clicked element and removed from its siblings
 			category = $(this).attr('id');
-			$('.options div').removeClass('selected');
+
+//			$('.options div').removeClass('selected');
+
+			document.querySelectorAll('.options div').forEach(function(el) {
+				el.classList.remove('selected');
+			});
+
 			$(this).addClass('selected');
 		} 
 
@@ -110,9 +120,11 @@
 			}
 		}
 
-		const $into = $('.activities')[0];
+//		const $into = $('.activities')[0];
+		const into = document.querySelector('.activities');
 
-		ReactDOM.render(<Activities {...state} />, $into);
+//		ReactDOM.render(<Activities {...state} />, $into);
+		ReactDOM.render(<Activities {...state} />, into);
 
 		function Activities(props) {
 			const activitiesList = props.activities.map(function(activity, index) {
