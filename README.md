@@ -3,20 +3,20 @@ We support and encourage active and healthy lifestyles, by offering ethically so
 
 
 
-##  Setup Instructions
+#  Setup Instructions
 1. clone the repository
 2. create your own weather API from ('http://api.openweathermap.org')
 3. Navigate to the script.js and Insert your API key.
 4. run your server to preview the site
 5. Search Any location for weather and sporting activities recommndation 
 
-            </div>
-## Technologies Used/
-**HTML
-**CSS 
-**JAVASCRIPT
-**APIs
-            </div>
+            
+# Technologies Used
+HTML
+CSS 
+JAVASCRIPT
+APIs
+            
 ## Behavior Driven Development
 
 #  Element Selection with Vanilla Javascript
