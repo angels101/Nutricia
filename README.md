@@ -56,13 +56,20 @@ The API fetch is not running on deployed gh-pages ie git.io. Preview the screen 
 
 ## Contribution
 Incase of any contibution and feedback, feel free to doso by visiting [Thislink] (https://github.com/angels101/Nutricia) and reachout angelscodex101@gmail.com.
-                      </br>
+
+            
+<br/>
+
+## portfolio
+https://agitated-hamilton-881922.netlify.app/ 
+
+<br/>
+
 ## License
   [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-<div align="center"><h2>Copyright © 2021 AngelsCodex.inc</h2></div>
-<br/> <br/>
-## portfolio
-https://agitated-hamilton-881922.netlify.app/
+# <div align="center"><h2>Copyright © 2021 AngelsCodex.inc</h2></div>
+<br/> 
+
 
 
